@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Policies</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Click Here </button>
+    <p id=id1></p>
+    <script>
+        function myFunction() {
+            let grade=1;
+            switch(grade){
+                case 1:
+                    grade= "A+";
+                    break;
+                case 0:
+                    grade= "A";
+                    break;
+                default:
+                    grade = "fail";
+            }
+            document.getElementById("id1").innerHTML = grade;
+        }
+    </script>
+
+</body>
+
+</html>

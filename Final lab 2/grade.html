@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Policies</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Click Here </button>
+    <p id=id1></p>
+    <script>
+        function myFunction() {
+
+            var cg = 3.75;
+            let grade;
+            if (cg == 4) {
+                grade = "A +";
+            }
+            else if (cg == 3.75 || cg > 4) {
+                grade = "A";
+            }
+            else if (cg == 3.50 || cg > 3.74) {
+                grade = "B+";
+            }
+            else if (cg == 3.25 || cg > 4) {
+                grade = "B";
+            }
+            else if (cg == 3.00 || cg > 4) {
+                grade = "C+";
+            }
+            else if (cg == 2.75 || cg > 4) {
+                grade = "C";
+            }
+            else if (cg == 2.50 || cg > 4) {
+                grade = "D+";
+            }
+            else if (cg == 2.25 || cg > 4) {
+                grade = "D";
+            }
+            else {
+                grade = "Fail";
+            }
+
+            document.getElementById("id1").innerHTML = grade;
+        }
+    </script>
+</body>
+
+</html>
